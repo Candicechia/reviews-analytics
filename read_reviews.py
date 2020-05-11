@@ -19,3 +19,13 @@ for rvlong in data:
 
 average_long = total/len(data)
 print('每筆留言平均長度為:', average_long)
+
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('一共有', len(new), '筆資料長度小於100')
+
+print(new[0])
+print(len(new[0]))
